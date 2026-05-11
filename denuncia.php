@@ -1,142 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EcoDenúncia - Registrar Denúncia</title>
+
+    <link rel="stylesheet" href="denuncia.css">
+
 </head>
 
 <body>
 
-    <header>
+    <header class="topo">
 
-        <h1>EcoAlerta</h1>
+        <div class="overlay">
 
-        <nav>
-            <a href="index.php">Início</a> |
-            <a href="denuncia.php">Fazer Denúncia</a> |
-            <a href="lista.php">Ver Denúncias</a> |
-            <a href="impacto.php">Impacto Ambiental</a>
-        </nav>
+            <div class="header-conteudo">
+
+                <h1 class="logo">EcoDenúncia</h1>
+
+                <nav class="menu">
+
+                    <a href="index.php" class="menu-link">Início</a>
+
+                    <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
+
+                    <a href="lista.php" class="menu-link">Ver Denúncias</a>
+
+                    <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
+
+                </nav>
+
+            </div>
+
+            <div class="banner-texto">
+
+                <h2 class="banner-titulo">
+
+                    Registro de Denúncias Ambientais
+
+                </h2>
+
+                <p class="banner-subtitulo">
+
+                    Ajude a preservar sua cidade registrando problemas ambientais.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </header>
 
-    <main>
 
-        <section>
 
-            <h2>Registro de Denúncia Ambiental</h2>
+    <main class="conteudo-principal">
 
-            <p>
+
+
+        <section class="card">
+
+            <span class="secao-mini">
+
+                Sobre o Sistema
+
+            </span>
+
+            <h2 class="titulo-secao">
+
+                Registro de Problemas Ambientais
+
+            </h2>
+
+            <p class="texto">
+
                 Esta página foi desenvolvida para permitir o registro de problemas
                 ambientais encontrados na cidade. O objetivo é organizar as
                 informações sobre descarte irregular de lixo, queimadas,
                 esgoto a céu aberto e outros problemas que afetam o meio ambiente.
+
             </p>
 
         </section>
 
-        <section>
 
-            <h2>Formulário de Denúncia</h2>
 
-            <form action="salvar.php" method="POST">
+        <section class="card formulario-card">
 
-                <p>
-                    Nome:
-                </p>
+            <span class="secao-mini">
 
-                <input type="text" name="nome">
+                Formulário
 
-                <br><br>
+            </span>
 
-                <p>
-                    Cidade/Bairro:
-                </p>
+            <h2 class="titulo-secao">
 
-                <input type="text" name="bairro">
+                Formulário de Denúncia
 
-                <br><br>
+            </h2>
 
-                <p>
-                    Tipo de problema:
-                </p>
 
-                <select name="problema">
 
-                    <option>Descarte irregular de lixo</option>
-                    <option>Queimada</option>
-                    <option>Esgoto a céu aberto</option>
-                    <option>Bueiro entupido</option>
-                    <option>Poluição de rios</option>
-                    <option>Outros</option>
+            <form action="salvar.php" method="POST" class="formulario">
 
-                </select>
 
-                <br>
 
-                <p>
-                    Caso tenha marcado "Outros", descreva:
-                </p>
+                <div class="grupo-form">
 
-                <input type="text" name="outroProblema">
+                    <label class="label">
 
-                <br><br>
+                        Nome:
 
-                <p>
-                    Gravidade:
-                </p>
+                    </label>
 
-                <select name="gravidade">
+                    <input type="text" name="nome" class="input">
 
-                    <option>Baixa</option>
-                    <option>Média</option>
-                    <option>Alta</option>
+                </div>
 
-                </select>
 
-                <br><br>
 
-                <p>
-                    Descrição:
-                </p>
+                <div class="grupo-form">
 
-                <textarea name="descricao"></textarea>
+                    <label class="label">
 
-                <br><br>
+                        Cidade/Bairro:
 
-                <input type="submit" value="Enviar Denúncia">
+                    </label>
+
+                    <input type="text" name="bairro" class="input">
+
+                </div>
+
+
+
+                <div class="grupo-form">
+
+                    <label class="label">
+
+                        Tipo de problema:
+
+                    </label>
+
+                    <select name="problema" class="input">
+
+                        <option>Descarte irregular de lixo</option>
+                        <option>Queimada</option>
+                        <option>Esgoto a céu aberto</option>
+                        <option>Bueiro entupido</option>
+                        <option>Poluição de rios</option>
+                        <option>Outros</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="grupo-form">
+
+                    <label class="label">
+
+                        Caso tenha marcado "Outros", descreva:
+
+                    </label>
+
+                    <input type="text" name="outroProblema" class="input">
+
+                </div>
+
+
+
+                <div class="grupo-form">
+
+                    <label class="label">
+
+                        Gravidade:
+
+                    </label>
+
+                    <select name="gravidade" class="input">
+
+                        <option>Baixa</option>
+                        <option>Média</option>
+                        <option>Alta</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="grupo-form">
+
+                    <label class="label">
+
+                        Descrição:
+
+                    </label>
+
+                    <textarea name="descricao" class="textarea"></textarea>
+
+                </div>
+
+
+
+                <input type="submit" value="Enviar Denúncia" class="botao">
+
+
 
             </form>
 
         </section>
 
-        <section>
 
-            <h2>Importância da Participação da População</h2>
 
-            <p>
+        <section class="card">
+
+            <span class="secao-mini">
+
+                Conscientização
+
+            </span>
+
+            <h2 class="titulo-secao">
+
+                Importância da Participação da População
+
+            </h2>
+
+            <p class="texto">
+
                 A participação da população é muito importante para a preservação
                 do meio ambiente. Pequenas ações podem ajudar na redução da
                 poluição e na melhoria da qualidade de vida da comunidade.
+
             </p>
 
-            <p>
+            <p class="texto">
+
                 Através das denúncias registradas no sistema, é possível identificar
                 os problemas ambientais mais frequentes e compreender quais áreas
                 precisam de maior atenção.
+
             </p>
 
         </section>
 
+
+
     </main>
 
-    <footer>
-        <p>&copy; - 2026 - Site desenvolvido como projeto escolar.
-        <p>
-    </footer>
 
+
+    <footer class="rodape">
+
+        <p class="rodape-texto">
+
+            &copy; 2026 - Site desenvolvido como projeto escolar.
+
+        </p>
+
+    </footer>
 
 </body>
 

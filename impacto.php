@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EcoDenúncia - Impacto Ambiental</title>
+
+    <link rel="stylesheet" href="impacto.css">
+
 </head>
+
 <body>
 
 <?php
 
 if (file_exists("dados.json")) {
+
     $conteudo = file_get_contents("dados.json");
+
     $denuncias = json_decode($conteudo, true);
+
 } else {
+
     $denuncias = [];
+
 }
 
 $totalDenuncias = count($denuncias);
@@ -31,98 +44,199 @@ foreach ($denuncias as $denuncia) {
 }
 
 ?>
-    <header>
 
-        <h1>EcoDenúncia</h1>
+    <header class="topo">
 
-        <nav>
-            <a href="index.php">Início</a> |
-            <a href="denuncia.php">Fazer Denúncia</a> |
-            <a href="lista.php">Ver Denúncias</a> |
-            <a href="impacto.php">Impacto Ambiental</a>
-        </nav>
+        <div class="overlay">
+
+            <div class="header-conteudo">
+
+                <h1 class="logo">
+
+                    EcoDenúncia
+
+                </h1>
+
+                <nav class="menu">
+
+                    <a href="index.php" class="menu-link">Início</a>
+
+                    <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
+
+                    <a href="lista.php" class="menu-link">Ver Denúncias</a>
+
+                    <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
+
+                </nav>
+
+            </div>
+
+            <div class="banner-texto">
+
+                <h2 class="banner-titulo">
+
+                    Impacto Ambiental na Cidade
+
+                </h2>
+
+                <p class="banner-subtitulo">
+
+                    Dados e informações sobre os problemas ambientais registrados.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </header>
 
-    <main>
 
-        <section>
 
-            <h2>Impacto Ambiental</h2>
+    <main class="conteudo-principal">
 
-            <p>
+
+
+        <section class="card">
+
+            <span class="secao-mini">
+
+                Sistema EcoDenúncia
+
+            </span>
+
+            <h2 class="titulo-secao">
+
+                Impactos Ambientais Urbanos
+
+            </h2>
+
+            <p class="texto">
+
                 Esta página apresenta informações relacionadas aos impactos
                 ambientais registrados no sistema EcoDenúncia.
+
             </p>
 
-            <p>
+            <p class="texto">
+
                 O objetivo é demonstrar como pequenos problemas ambientais
                 podem gerar grandes consequências para a cidade, afetando
                 a saúde pública, a limpeza urbana e a qualidade de vida da
                 população.
+
             </p>
 
         </section>
 
-        <section>
 
-            <h2>Informações Registradas</h2>
 
-            <p>
-                Total de denúncias registradas:
-            </p>
+        <section class="estatisticas">
 
-            <h3>
-                <?php echo $totalDenuncias; ?>
-            </h3>
 
-            <br>
 
-            <p>
-                Denúncias classificadas com gravidade alta:
-            </p>
+            <div class="card-estatistica">
 
-            <h3>
-                <?php echo $gravidadeAlta; ?>
-            </h3>
+                <span class="numero">
+
+                    <?php echo $totalDenuncias; ?>
+
+                </span>
+
+                <p class="estatistica-texto">
+
+                    Total de denúncias registradas
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card-estatistica destaque">
+
+                <span class="numero">
+
+                    <?php echo $gravidadeAlta; ?>
+
+                </span>
+
+                <p class="estatistica-texto">
+
+                    Denúncias com gravidade alta
+
+                </p>
+
+            </div>
+
+
 
         </section>
 
-        <section>
 
-            <h2>Consequências dos Problemas Ambientais</h2>
 
-            <p>
+        <section class="card">
+
+            <span class="secao-mini">
+
+                Consequências Ambientais
+
+            </span>
+
+            <h2 class="titulo-secao">
+
+                Problemas causados pela poluição urbana
+
+            </h2>
+
+            <p class="texto">
+
                 O descarte irregular de lixo e outros problemas ambientais
                 podem causar diversos impactos negativos para a cidade.
+
             </p>
 
-            <p>
+            <p class="texto">
+
                 Entre os principais problemas estão o aumento da poluição,
                 a proliferação de insetos e doenças, o entupimento de bueiros
                 e o risco de enchentes em períodos de chuva.
+
             </p>
 
-            <p>
+            <p class="texto">
+
                 Além disso, queimadas e poluição da água prejudicam diretamente
                 o meio ambiente e afetam a qualidade de vida da população.
+
             </p>
 
-            <p>
+            <p class="texto">
+
                 A conscientização ambiental e a participação da comunidade
                 são fundamentais para reduzir esses impactos e preservar os
                 espaços urbanos.
+
             </p>
 
         </section>
 
+
+
     </main>
 
-    <br>
 
-    <footer>
-     <p>&copy; - 2026 - Site desenvolvido como projeto escolar.<p>
+
+    <footer class="rodape">
+
+        <p class="rodape-texto">
+
+            &copy; 2026 - Site desenvolvido como projeto escolar.
+
+        </p>
+
     </footer>
 
 </body>
+
 </html>

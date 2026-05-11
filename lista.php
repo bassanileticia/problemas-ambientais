@@ -1,114 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoDenúncia - Ver Denúncia</title>
+
+    <title>EcoDenúncia - Ver Denúncias</title>
+
+    <link rel="stylesheet" href="lista.css">
+
 </head>
+
 <body>
-    
+
 <?php
 
 if (file_exists("dados.json")) {
+
     $conteudo = file_get_contents("dados.json");
+
     $denuncias = json_decode($conteudo, true);
+
 } else {
+
     $denuncias = [];
 
 }
 
 ?>
 
-    <header>
+    <header class="topo">
 
-        <h1>EcoDenúncia</h1>
+        <div class="overlay">
 
-        <nav>
-            <a href="index.php">Início</a> |
-            <a href="denuncia.php">Fazer Denúncia</a> |
-            <a href="lista.php">Ver Denúncias</a> |
-            <a href="impacto.php">Impacto Ambiental</a>
-        </nav>
+            <div class="header-conteudo">
+
+                <h1 class="logo">
+
+                    EcoDenúncia
+
+                </h1>
+
+                <nav class="menu">
+
+                    <a href="index.php" class="menu-link">Início</a>
+
+                    <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
+
+                    <a href="lista.php" class="menu-link">Ver Denúncias</a>
+
+                    <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
+
+                </nav>
+
+            </div>
+
+            <div class="banner-texto">
+
+                <h2 class="banner-titulo">
+
+                    Denúncias Ambientais Registradas
+
+                </h2>
+
+                <p class="banner-subtitulo">
+
+                    Visualize os problemas ambientais registrados pela população.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </header>
 
-    <main>
 
-        <section>
 
-            <h2>Denúncias Registradas</h2>
+    <main class="conteudo-principal">
 
-            <p>
+
+
+        <section class="card">
+
+            <span class="secao-mini">
+
+                Sistema EcoDenúncia
+
+            </span>
+
+            <h2 class="titulo-secao">
+
+                Acompanhamento das Ocorrências
+
+            </h2>
+
+            <p class="texto">
+
                 Esta página apresenta as denúncias ambientais registradas
                 pelos usuários no sistema EcoDenúncia.
+
             </p>
 
-            <p>
+            <p class="texto">
+
                 O objetivo do sistema é organizar informações sobre problemas
                 ambientais encontrados na cidade e incentivar a conscientização
                 da população.
+
             </p>
 
         </section>
 
-        <section>
 
-            <h2>Lista de Ocorrências</h2>
 
-            <table border="1">
+        <section class="card tabela-card">
 
-                <tr>
-                    <th>Nome</th>
-                    <th>Bairro</th>
-                    <th>Problema</th>
-                    <th>Gravidade</th>
-                    <th>Descrição</th>
-                </tr>
+            <span class="secao-mini">
 
-                <?php
+                Lista de Ocorrências
 
-                foreach ($denuncias as $denuncia) {
+            </span>
 
-                    echo "<tr>";
+            <h2 class="titulo-secao">
 
-                    echo "<td>" . $denuncia["nome"] . "</td>";
+                Denúncias Registradas
 
-                    echo "<td>" . $denuncia["bairro"] . "</td>";
+            </h2>
 
-                    echo "<td>" . $denuncia["problema"] . "</td>";
 
-                    echo "<td>" . $denuncia["gravidade"] . "</td>";
 
-                    echo "<td>" . $denuncia["descricao"] . "</td>";
+            <div class="tabela-responsiva">
 
-                    echo "</tr>";
+                <table class="tabela">
 
-                }
+                    <tr>
 
-                ?>
+                        <th>Nome</th>
 
-            </table>
+                        <th>Bairro</th>
+
+                        <th>Problema</th>
+
+                        <th>Gravidade</th>
+
+                        <th>Descrição</th>
+
+                    </tr>
+
+                    <?php
+
+                    foreach ($denuncias as $denuncia) {
+
+                        echo "<tr>";
+
+                        echo "<td>" . $denuncia["nome"] . "</td>";
+
+                        echo "<td>" . $denuncia["bairro"] . "</td>";
+
+                        echo "<td>" . $denuncia["problema"] . "</td>";
+
+                        echo "<td>" . $denuncia["gravidade"] . "</td>";
+
+                        echo "<td>" . $denuncia["descricao"] . "</td>";
+
+                        echo "</tr>";
+
+                    }
+
+                    ?>
+
+                </table>
+
+            </div>
 
         </section>
 
 
-        <section>
 
-            <h2>Importância do Registro das Denúncias</h2>
+        <section class="card destaque">
 
-            <p>
+            <span class="secao-mini">
+
+                Conscientização Ambiental
+
+            </span>
+
+            <h2 class="titulo-secao">
+
+                Importância do Registro das Denúncias
+
+            </h2>
+
+            <p class="texto">
+
                 O registro das denúncias ambientais ajuda na organização das
                 informações sobre os problemas mais frequentes encontrados
                 na cidade.
+
             </p>
 
         </section>
 
+
+
     </main>
 
-    <footer>
-       <p>&copy; - 2026 - Site desenvolvido como projeto escolar.<p>
+
+
+    <footer class="rodape">
+
+        <p class="rodape-texto">
+
+            &copy; 2026 - Site desenvolvido como projeto escolar.
+
+        </p>
+
     </footer>
 
 </body>
+
 </html>
