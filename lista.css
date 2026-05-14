@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background: #eef2ec;
     font-family: 'Poppins', sans-serif;
     color: #222;
+    overflow-x: hidden;
 }
 
 /* TOPO */
 
-.topo {
+.topo{
     background:
-        linear-gradient(rgba(7, 30, 7, 0.7),
-        rgba(7, 30, 7, 0.7)),
-        url('https://i.pinimg.com/736x/6a/40/c2/6a40c2af14fc867c89ddb15777c381d4.jpg');
+    linear-gradient(rgba(7,30,7,0.75),
+    rgba(7,30,7,0.75)),
+    url('https://i.pinimg.com/736x/6a/40/c2/6a40c2af14fc867c89ddb15777c381d4.jpg');
 
     background-size: cover;
     background-position: center;
@@ -29,28 +30,28 @@ body {
     overflow: hidden;
 }
 
-.overlay {
-    padding: 40px 8% 80px;
+.overlay{
+    padding: 40px 8% 90px;
 }
 
-.header-conteudo {
+.header-conteudo{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.logo{
     color: white;
     font-size: 42px;
     font-weight: 700;
 }
 
-.menu {
+.menu{
     display: flex;
     gap: 25px;
 }
 
-.menu-link {
+.menu-link{
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -58,30 +59,30 @@ body {
     transition: 0.3s;
 }
 
-.menu-link:hover {
+.menu-link:hover{
     color: #b8ff59;
 }
 
-.banner-texto {
+.banner-texto{
     margin-top: 100px;
     max-width: 700px;
 }
 
-.banner-titulo {
+.banner-titulo{
     color: white;
-    font-size: 56px;
+    font-size: 58px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
-.banner-subtitulo {
+.banner-subtitulo{
     color: #d9e6d6;
     font-size: 18px;
 }
 
 /* MAIN */
 
-.conteudo-principal {
+.conteudo-principal{
     width: 90%;
     max-width: 1200px;
     margin: 60px auto;
@@ -89,7 +90,7 @@ body {
 
 /* CARDS */
 
-.card {
+.card{
     background: white;
 
     border-radius: 30px;
@@ -98,29 +99,29 @@ body {
 
     margin-bottom: 35px;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 
     transition: 0.4s;
 }
 
-.card:hover {
+.card:hover{
     transform: translateY(-5px);
 }
 
-.secao-mini {
+.secao-mini{
     color: #6e8649;
     font-size: 14px;
     font-weight: 600;
 }
 
-.titulo-secao {
+.titulo-secao{
     font-size: 38px;
     color: #1f3620;
     line-height: 1.2;
     margin: 15px 0 25px;
 }
 
-.texto {
+.texto{
     color: #555;
     font-size: 17px;
     line-height: 1.9;
@@ -130,65 +131,64 @@ body {
 
 /* TABELA */
 
-.tabela-card {
+.tabela-card{
     overflow: hidden;
 }
 
-.tabela-responsiva {
+.tabela-responsiva{
     overflow-x: auto;
+    margin-top: 25px;
 }
 
-.tabela {
+.tabela{
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    min-width: 850px;
 }
 
-.tabela th {
+.tabela th{
     background: #2d531a;
-
     color: white;
 
     padding: 18px;
 
-    text-align: left;
-
     font-size: 15px;
+    font-weight: 600;
+
+    text-align: left;
 }
 
-.tabela td {
+.tabela td{
     padding: 18px;
 
-    border-bottom: 1px solid #dfe5dc;
+    border-bottom: 1px solid #dfe6db;
+
+    color: #444;
 
     font-size: 15px;
 
-    color: #444;
+    background: #f9fbf8;
 }
 
-.tabela tr {
-    transition: 0.3s;
+.tabela tr:hover td{
+    background: #eef5ea;
 }
 
-.tabela tr:hover {
-    background: #f4f7f2;
+/* CARD DESTAQUE */
+
+.destaque{
+    background: linear-gradient(135deg,#2d531a,#0d330e);
 }
 
-/* DESTAQUE */
-
-.destaque {
-    background: linear-gradient(135deg, #2d531a, #0d330e);
-}
-
+.destaque .secao-mini,
 .destaque .titulo-secao,
-.destaque .texto,
-.destaque .secao-mini {
+.destaque .texto{
     color: white;
 }
 
 /* RODAPÉ */
 
-.rodape {
+.rodape{
     margin-top: 70px;
 
     background: linear-gradient(135deg, #0d330e, #2d531a);
@@ -201,65 +201,65 @@ body {
     text-align: center;
 }
 
-.rodape-texto {
+.rodape-texto{
     color: white;
     font-size: 15px;
 }
 
 /* RESPONSIVO */
 
-@media(max-width: 900px) {
+@media(max-width: 900px){
 
-    .header-conteudo {
+    .header-conteudo{
         flex-direction: column;
         gap: 25px;
     }
 
-    .menu {
+    .menu{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .banner-titulo {
+    .banner-titulo{
         font-size: 42px;
     }
 
-    .titulo-secao {
+    .titulo-secao{
         font-size: 30px;
     }
 
-    .card {
+    .card{
         padding: 30px;
     }
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 600px){
 
-    .menu {
+    .menu{
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
 
-    .banner-titulo {
+    .banner-titulo{
         font-size: 34px;
     }
 
-    .banner-subtitulo {
+    .banner-subtitulo{
         font-size: 16px;
     }
 
-    .titulo-secao {
+    .titulo-secao{
         font-size: 25px;
     }
 
-    .texto {
+    .texto{
         font-size: 15px;
     }
 
     .tabela th,
-    .tabela td {
+    .tabela td{
         padding: 14px;
         font-size: 14px;
     }

@@ -65,26 +65,30 @@
 
         <section class="card">
 
-            <span class="secao-mini">
+            <div class="card-texto">
 
-                Sobre o Sistema
+                <span class="secao-mini">
 
-            </span>
+                    Sobre o Sistema
 
-            <h2 class="titulo-secao">
+                </span>
 
-                Registro de Problemas Ambientais
+                <h2 class="titulo-secao">
 
-            </h2>
+                    Registro de Problemas Ambientais
 
-            <p class="texto">
+                </h2>
 
-                Esta página foi desenvolvida para permitir o registro de problemas
-                ambientais encontrados na cidade. O objetivo é organizar as
-                informações sobre descarte irregular de lixo, queimadas,
-                esgoto a céu aberto e outros problemas que afetam o meio ambiente.
+                <p class="texto">
 
-            </p>
+                    Esta página foi desenvolvida para permitir o registro de problemas
+                    ambientais encontrados na cidade. O objetivo é organizar as
+                    informações sobre descarte irregular de lixo, queimadas,
+                    esgoto a céu aberto e outros problemas que afetam o meio ambiente.
+
+                </p>
+
+            </div>
 
         </section>
 
@@ -221,33 +225,37 @@
 
         <section class="card">
 
-            <span class="secao-mini">
+            <div class="card-texto">
 
-                Conscientização
+                <span class="secao-mini">
 
-            </span>
+                    Conscientização
 
-            <h2 class="titulo-secao">
+                </span>
 
-                Importância da Participação da População
+                <h2 class="titulo-secao">
 
-            </h2>
+                    Importância da Participação da População
 
-            <p class="texto">
+                </h2>
 
-                A participação da população é muito importante para a preservação
-                do meio ambiente. Pequenas ações podem ajudar na redução da
-                poluição e na melhoria da qualidade de vida da comunidade.
+                <p class="texto">
 
-            </p>
+                    A participação da população é muito importante para a preservação
+                    do meio ambiente. Pequenas ações podem ajudar na redução da
+                    poluição e na melhoria da qualidade de vida da comunidade.
 
-            <p class="texto">
+                </p>
 
-                Através das denúncias registradas no sistema, é possível identificar
-                os problemas ambientais mais frequentes e compreender quais áreas
-                precisam de maior atenção.
+                <p class="texto">
 
-            </p>
+                    Através das denúncias registradas no sistema, é possível identificar
+                    os problemas ambientais mais frequentes e compreender quais áreas
+                    precisam de maior atenção.
+
+                </p>
+
+            </div>
 
         </section>
 
