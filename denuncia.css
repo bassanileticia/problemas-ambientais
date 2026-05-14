@@ -107,6 +107,10 @@ body {
     transform: translateY(-5px);
 }
 
+.card-texto {
+    width: 100%;
+}
+
 .secao-mini {
     color: #6e8649;
     font-size: 14px;
@@ -165,6 +169,8 @@ body {
     transition: 0.3s;
 
     outline: none;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 .input:focus,
@@ -198,6 +204,8 @@ body {
     cursor: pointer;
 
     transition: 0.3s;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 .botao:hover {
