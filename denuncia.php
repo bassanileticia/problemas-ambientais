@@ -62,34 +62,6 @@
     <main class="conteudo-principal">
 
 
-
-        <section class="card">
-
-            <span class="secao-mini">
-
-                Sobre o Sistema
-
-            </span>
-
-            <h2 class="titulo-secao">
-
-                Registro de Problemas Ambientais
-
-            </h2>
-
-            <p class="texto">
-
-                Esta página foi desenvolvida para permitir o registro de problemas
-                ambientais encontrados na cidade. O objetivo é organizar as
-                informações sobre descarte irregular de lixo, queimadas,
-                esgoto a céu aberto e outros problemas que afetam o meio ambiente.
-
-            </p>
-
-        </section>
-
-
-
         <section class="card formulario-card">
 
             <span class="secao-mini">
