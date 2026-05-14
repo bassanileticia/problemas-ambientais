@@ -99,33 +99,37 @@ foreach ($denuncias as $denuncia) {
 
         <section class="card">
 
-            <span class="secao-mini">
+            <div class="card-texto">
 
-                Sistema EcoDenúncia
+                <span class="secao-mini">
 
-            </span>
+                    Sistema EcoDenúncia
 
-            <h2 class="titulo-secao">
+                </span>
 
-                Impactos Ambientais Urbanos
+                <h2 class="titulo-secao">
 
-            </h2>
+                    Impactos Ambientais Urbanos
 
-            <p class="texto">
+                </h2>
 
-                Esta página apresenta informações relacionadas aos impactos
-                ambientais registrados no sistema EcoDenúncia.
+                <p class="texto">
 
-            </p>
+                    Esta página apresenta informações relacionadas aos impactos
+                    ambientais registrados no sistema EcoDenúncia.
 
-            <p class="texto">
+                </p>
 
-                O objetivo é demonstrar como pequenos problemas ambientais
-                podem gerar grandes consequências para a cidade, afetando
-                a saúde pública, a limpeza urbana e a qualidade de vida da
-                população.
+                <p class="texto">
 
-            </p>
+                    O objetivo é demonstrar como pequenos problemas ambientais
+                    podem gerar grandes consequências para a cidade, afetando
+                    a saúde pública, a limpeza urbana e a qualidade de vida da
+                    população.
+
+                </p>
+
+            </div>
 
         </section>
 
@@ -175,49 +179,55 @@ foreach ($denuncias as $denuncia) {
 
 
 
-        <section class="card">
+        <section class="card card-imagem-lado">
 
-            <span class="secao-mini">
+            <img src="img/Impacto- impacto.php (1).png" alt="" class="imagem-impacto">
 
-                Consequências Ambientais
+            <div class="card-texto">
 
-            </span>
+                <span class="secao-mini">
 
-            <h2 class="titulo-secao">
+                    Consequências Ambientais
 
-                Problemas causados pela poluição urbana
+                </span>
 
-            </h2>
+                <h2 class="titulo-secao">
 
-            <p class="texto">
+                    Problemas causados pela poluição urbana
 
-                O descarte irregular de lixo e outros problemas ambientais
-                podem causar diversos impactos negativos para a cidade.
+                </h2>
 
-            </p>
+                <p class="texto">
 
-            <p class="texto">
+                    O descarte irregular de lixo e outros problemas ambientais
+                    podem causar diversos impactos negativos para a cidade.
 
-                Entre os principais problemas estão o aumento da poluição,
-                a proliferação de insetos e doenças, o entupimento de bueiros
-                e o risco de enchentes em períodos de chuva.
+                </p>
 
-            </p>
+                <p class="texto">
 
-            <p class="texto">
+                    Entre os principais problemas estão o aumento da poluição,
+                    a proliferação de insetos e doenças, o entupimento de bueiros
+                    e o risco de enchentes em períodos de chuva.
 
-                Além disso, queimadas e poluição da água prejudicam diretamente
-                o meio ambiente e afetam a qualidade de vida da população.
+                </p>
 
-            </p>
+                <p class="texto">
 
-            <p class="texto">
+                    Além disso, queimadas e poluição da água prejudicam diretamente
+                    o meio ambiente e afetam a qualidade de vida da população.
 
-                A conscientização ambiental e a participação da comunidade
-                são fundamentais para reduzir esses impactos e preservar os
-                espaços urbanos.
+                </p>
 
-            </p>
+                <p class="texto">
+
+                    A conscientização ambiental e a participação da comunidade
+                    são fundamentais para reduzir esses impactos e preservar os
+                    espaços urbanos.
+
+                </p>
+
+            </div>
 
         </section>
 
