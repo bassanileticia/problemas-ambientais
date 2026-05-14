@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background: #eef2ec;
     font-family: 'Poppins', sans-serif;
     color: #222;
+    overflow-x: hidden;
 }
 
 /* TOPO */
 
-.topo {
+.topo{
     background:
-        linear-gradient(rgba(7, 30, 7, 0.7),
-        rgba(7, 30, 7, 0.7)),
-        url('https://i.pinimg.com/736x/6a/40/c2/6a40c2af14fc867c89ddb15777c381d4.jpg');
+    linear-gradient(rgba(7,30,7,0.75),
+    rgba(7,30,7,0.75)),
+    url('https://i.pinimg.com/1200x/00/b5/da/00b5da5b518c786d2527a105e34ae2c8.jpg');
 
     background-size: cover;
     background-position: center;
@@ -29,127 +30,186 @@ body {
     overflow: hidden;
 }
 
-.overlay {
-    padding: 40px 8% 80px;
+.overlay{
+    padding: 40px 8% 90px;
 }
 
-.header-conteudo {
+.header-conteudo{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.logo{
     color: white;
-    font-size: 42px;
+    font-size: 45px;
     font-weight: 700;
 }
 
-.menu {
+.menu{
     display: flex;
     gap: 25px;
 }
 
-.menu-link {
+.menu-link{
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s;
+    position: relative;
 }
 
-.menu-link:hover {
+.menu-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+
+    background: #b8ff59;
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    transition: 0.3s;
+}
+
+.menu-link:hover{
     color: #b8ff59;
 }
 
-.banner-texto {
-    margin-top: 100px;
-    max-width: 650px;
+.menu-link:hover::after{
+    width: 100%;
 }
 
-.banner-titulo {
+.banner-texto{
+    margin-top: 110px;
+    max-width: 700px;
+}
+
+.banner-titulo{
     color: white;
-    font-size: 60px;
+    font-size: 65px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
-.banner-subtitulo {
-    color: #d9e6d6;
-    font-size: 18px;
+.banner-subtitulo{
+    color: #dce8d8;
+    font-size: 19px;
+    line-height: 1.7;
 }
 
-/* CONTEÚDO */
+/* MAIN */
 
-.conteudo-principal {
+.conteudo-principal{
     width: 90%;
-    max-width: 1200px;
-    margin: 60px auto;
+    max-width: 1250px;
+    margin: 70px auto;
 }
 
-.card {
-    background: white;
-    border-radius: 30px;
-    padding: 45px;
-    margin-bottom: 35px;
+/* CARDS */
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+.card{
+    background: white;
+
+    border-radius: 35px;
+
+    padding: 50px;
+
+    margin-bottom: 40px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.4s;
+
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card-reverso{
+    flex-direction: row-reverse;
+}
+
+.card-imagem{
+    width: 420px;
+    max-width: 100%;
+
+    border-radius: 25px;
+
+    object-fit: cover;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 
     transition: 0.4s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.card-imagem:hover{
+    transform: scale(1.03);
 }
 
-.secao-mini {
+.card-texto{
+    flex: 1;
+}
+
+.secao-mini{
     color: #6e8649;
     font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.titulo-secao {
-    font-size: 40px;
+.titulo-secao{
+    font-size: 42px;
     color: #1f3620;
     line-height: 1.2;
     margin: 15px 0 25px;
 }
 
-.texto {
+.texto{
+    color: #555;
     font-size: 17px;
     line-height: 1.9;
-    color: #555;
     margin-bottom: 18px;
     text-align: justify;
 }
 
-.destaque {
-    background: linear-gradient(135deg, #2d531a, #0d330e);
+/* DESTAQUE */
+
+.destaque{
+    background: linear-gradient(135deg,#2d531a,#0d330e);
 }
 
 .destaque .titulo-secao,
 .destaque .texto,
-.destaque .secao-mini {
+.destaque .secao-mini{
     color: white;
 }
 
 /* BOTÃO */
 
-.botao-link {
+.botao-link{
     text-decoration: none;
 }
 
-.botao {
+.botao{
     margin-top: 20px;
 
     background: #b8ff59;
-    color: #163017;
+
+    color: #173018;
 
     border: none;
 
-    padding: 16px 35px;
+    padding: 17px 38px;
 
-    border-radius: 14px;
+    border-radius: 15px;
 
     font-size: 17px;
     font-weight: 700;
@@ -157,21 +217,23 @@ body {
     cursor: pointer;
 
     transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(184,255,89,0.3);
 }
 
-.botao:hover {
+.botao:hover{
     transform: scale(1.05);
     background: white;
 }
 
 /* RODAPÉ */
 
-.rodape {
-    margin-top: 70px;
+.rodape{
+    margin-top: 80px;
 
-    background: linear-gradient(135deg, #0d330e, #2d531a);
+    background: linear-gradient(135deg,#0d330e,#2d531a);
 
-    padding: 40px;
+    padding: 45px;
 
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
@@ -179,65 +241,83 @@ body {
     text-align: center;
 }
 
-.rodape-texto {
+.rodape-texto{
     color: white;
     font-size: 15px;
+    letter-spacing: 1px;
 }
 
 /* RESPONSIVO */
 
-@media(max-width: 900px) {
+@media(max-width: 1100px){
 
-    .header-conteudo {
+    .card,
+    .card-reverso{
         flex-direction: column;
-        gap: 25px;
     }
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .banner-titulo {
-        font-size: 42px;
-    }
-
-    .titulo-secao {
-        font-size: 30px;
-    }
-
-    .card {
-        padding: 30px;
+    .card-imagem{
+        width: 100%;
     }
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 900px){
 
-    .banner-titulo {
+    .header-conteudo{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner-titulo{
+        font-size: 48px;
+    }
+
+    .titulo-secao{
         font-size: 34px;
     }
 
-    .banner-subtitulo {
-        font-size: 16px;
+    .card{
+        padding: 35px;
     }
 
-    .menu {
+}
+
+@media(max-width: 600px){
+
+    .menu{
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
 
-    .titulo-secao {
-        font-size: 26px;
+    .banner-titulo{
+        font-size: 36px;
     }
 
-    .texto {
+    .banner-subtitulo{
+        font-size: 16px;
+    }
+
+    .titulo-secao{
+        font-size: 28px;
+    }
+
+    .texto{
         font-size: 15px;
     }
 
-    .botao {
+    .botao{
         width: 100%;
+    }
+
+    .card{
+        padding: 25px;
     }
 
 }

@@ -62,6 +62,8 @@
 
         <section class="card">
 
+            <img src="img/EcoDenuncia- INDEX.png" alt="" class="card-imagem">
+
             <div class="card-texto">
 
                 <span class="secao-mini">Sobre o Projeto</span>
@@ -114,7 +116,9 @@
 
 
 
-        <section class="card">
+        <section class="card card-reverso">
+
+            <img src="img/descarte - INDEX.png" alt="" class="card-imagem">
 
             <div class="card-texto">
 
@@ -176,6 +180,8 @@
 
         <section class="card">
 
+            <img src="img/Participacao  - INDEX.png" alt="" class="card-imagem">
+
             <div class="card-texto">
 
                 <span class="secao-mini">Objetivos do Sistema</span>
@@ -204,7 +210,9 @@
 
 
 
-        <section class="card">
+        <section class="card card-reverso">
+
+            <img src="img/_Cidades limpas - INDEX.png" alt="" class="card-imagem">
 
             <div class="card-texto">
 
