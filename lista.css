@@ -7,31 +7,19 @@
 }
 
 body{
-    background: #eef2ec;
+    background: #edf4e7;
     font-family: 'Poppins', sans-serif;
-    color: #222;
-    overflow-x: hidden;
+    color: #2b2b2b;
 }
 
 /* TOPO */
 
 .topo{
-    background:
-    linear-gradient(rgba(7,30,7,0.75),
-    rgba(7,30,7,0.75)),
-    url('https://i.pinimg.com/736x/6a/40/c2/6a40c2af14fc867c89ddb15777c381d4.jpg');
-
-    background-size: cover;
-    background-position: center;
-
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-
-    overflow: hidden;
+    background: linear-gradient(135deg, #3f7421, #18461d);
 }
 
 .overlay{
-    padding: 40px 8% 90px;
+    padding: 40px 8% 80px;
 }
 
 .header-conteudo{
@@ -56,15 +44,31 @@ body{
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.menu-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #c9ff74;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
     transition: 0.3s;
 }
 
 .menu-link:hover{
-    color: #b8ff59;
+    color: #dfff9d;
+}
+
+.menu-link:hover::after{
+    width: 100%;
 }
 
 .banner-texto{
-    margin-top: 100px;
+    margin-top: 90px;
     max-width: 700px;
 }
 
@@ -76,15 +80,16 @@ body{
 }
 
 .banner-subtitulo{
-    color: #d9e6d6;
+    color: #edf6e6;
     font-size: 18px;
+    line-height: 1.7;
 }
 
 /* MAIN */
 
 .conteudo-principal{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 60px auto;
 }
 
@@ -92,15 +97,10 @@ body{
 
 .card{
     background: white;
-
     border-radius: 30px;
-
     padding: 45px;
-
     margin-bottom: 35px;
-
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-
     transition: 0.4s;
 }
 
@@ -109,20 +109,20 @@ body{
 }
 
 .secao-mini{
-    color: #6e8649;
+    color: #5f8c38;
     font-size: 14px;
     font-weight: 600;
 }
 
 .titulo-secao{
     font-size: 38px;
-    color: #1f3620;
+    color: #1f4d1d;
     line-height: 1.2;
     margin: 15px 0 25px;
 }
 
 .texto{
-    color: #555;
+    color: #5a5a5a;
     font-size: 17px;
     line-height: 1.9;
     margin-bottom: 18px;
@@ -132,10 +132,11 @@ body{
 /* TABELA */
 
 .tabela-card{
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 .tabela-responsiva{
+    width: 100%;
     overflow-x: auto;
     margin-top: 25px;
 }
@@ -143,31 +144,24 @@ body{
 .tabela{
     width: 100%;
     border-collapse: collapse;
-    min-width: 850px;
+    border-radius: 18px;
+    overflow: hidden;
 }
 
 .tabela th{
-    background: #2d531a;
+    background: #5f8c38;
     color: white;
-
     padding: 18px;
-
-    font-size: 15px;
-    font-weight: 600;
-
     text-align: left;
+    font-size: 15px;
 }
 
 .tabela td{
-    padding: 18px;
-
-    border-bottom: 1px solid #dfe6db;
-
-    color: #444;
-
+    background: #f7faf5;
+    padding: 16px;
+    border-bottom: 1px solid #dde7d8;
+    color: #4e4e4e;
     font-size: 15px;
-
-    background: #f9fbf8;
 }
 
 .tabela tr:hover td{
@@ -177,27 +171,15 @@ body{
 /* CARD DESTAQUE */
 
 .destaque{
-    background: linear-gradient(135deg,#2d531a,#0d330e);
-}
-
-.destaque .secao-mini,
-.destaque .titulo-secao,
-.destaque .texto{
-    color: white;
+    border-left: 6px solid #5f8c38;
 }
 
 /* RODAPÉ */
 
 .rodape{
     margin-top: 70px;
-
-    background: linear-gradient(135deg, #0d330e, #2d531a);
-
+    background: linear-gradient(135deg, #3f7421, #18461d);
     padding: 40px;
-
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-
     text-align: center;
 }
 
@@ -260,7 +242,7 @@ body{
 
     .tabela th,
     .tabela td{
-        padding: 14px;
+        padding: 12px;
         font-size: 14px;
     }
 

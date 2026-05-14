@@ -21,13 +21,17 @@
 
             <div class="header-conteudo">
 
-                <h1 class="logo">EcoDenúncia</h1>
+                <h1 class="logo">
+
+                    EcoDenúncia
+
+                </h1>
 
                 <nav class="menu">
 
-                    <a href="index.php" class="menu-link">Início</a>
+                   <a href="index.php" class="menu-link">Início</a>
 
-                    <a href="sobre.php" class="menu-link">Sobre</a>
+                     <a href="sobre.php" class="menu-link">Sobre</a>
 
                     <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
 
@@ -62,6 +66,8 @@
 
 
     <main class="conteudo-principal">
+
+
 
         <section class="card formulario-card">
 
