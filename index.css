@@ -7,31 +7,34 @@
 }
 
 body{
-    background: #eef2ec;
+    background: #eef4e4;
     font-family: 'Poppins', sans-serif;
     color: #222;
-    overflow-x: hidden;
+}
+
+/* BANNER */
+
+.banner-topo{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
 }
 
 /* TOPO */
 
 .topo{
-    background:
-    linear-gradient(rgba(7,30,7,0.75),
-    rgba(7,30,7,0.75)),
-    url('https://i.pinimg.com/736x/6a/40/c2/6a40c2af14fc867c89ddb15777c381d4.jpg');
+    margin-top: -5px;
 
-    background-size: cover;
-    background-position: center;
-
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    background: linear-gradient(135deg, #234d17, #3d6d1f);
 
     overflow: hidden;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
 }
 
 .overlay{
-    padding: 40px 8% 90px;
+    padding: 30px 8%;
 }
 
 .header-conteudo{
@@ -41,8 +44,8 @@ body{
 }
 
 .logo{
-    color: white;
-    font-size: 42px;
+    color: #f5ffe8;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -52,32 +55,24 @@ body{
 }
 
 .menu-link{
-    color: white;
+    color: #f5ffe8;
+
     text-decoration: none;
+
     font-size: 16px;
     font-weight: 500;
+
     transition: 0.3s;
+
+    padding-bottom: 4px;
+
+    border-bottom: 2px solid transparent;
 }
 
 .menu-link:hover{
-    color: #b8ff59;
-}
+    color: #d8ff8f;
 
-.banner-texto{
-    margin-top: 100px;
-    max-width: 700px;
-}
-
-.banner-titulo{
-    color: white;
-    font-size: 58px;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.banner-subtitulo{
-    color: #d9e6d6;
-    font-size: 18px;
+    border-color: #d8ff8f;
 }
 
 /* MAIN */
@@ -93,69 +88,77 @@ body{
 .card{
     background: white;
 
-    border-radius: 30px;
+    border-radius: 24px;
 
     padding: 45px;
 
     margin-bottom: 35px;
 
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-
-    transition: 0.4s;
-
     display: flex;
     align-items: center;
     gap: 40px;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
 }
 
 .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .card-reverso{
     flex-direction: row-reverse;
 }
 
-.card-imagem{
-    width: 420px;
-    max-width: 100%;
-
-    border-radius: 25px;
-
-    object-fit: cover;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-
-    transition: 0.4s;
-}
-
-.card-imagem:hover{
-    transform: scale(1.02);
-}
-
 .card-texto{
     flex: 1;
 }
 
+.card-imagem{
+    width: 370px;
+    height: 310px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
 .secao-mini{
-    color: #6e8649;
+    color: #6f8f3e;
+
     font-size: 14px;
     font-weight: 600;
 }
 
 .titulo-secao{
-    font-size: 38px;
-    color: #1f3620;
+    font-size: 36px;
+
+    color: #234d17;
+
     line-height: 1.2;
-    margin: 15px 0 25px;
+
+    margin: 14px 0 24px;
 }
 
 .texto{
     color: #555;
+
     font-size: 17px;
+
     line-height: 1.9;
+
     margin-bottom: 18px;
+
     text-align: justify;
+}
+
+/* CARD DESTAQUE */
+
+.destaque{
+    background: linear-gradient(135deg, #f5ffe8, #ffffff);
 }
 
 /* BOTÃO */
@@ -165,7 +168,7 @@ body{
 }
 
 .botao{
-    background: #477023;
+    background: #5f8f2f;
 
     color: white;
 
@@ -182,24 +185,13 @@ body{
 
     transition: 0.3s;
 
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .botao:hover{
-    background: #2d531a;
+    background: #3d6d1f;
+
     transform: scale(1.03);
-}
-
-/* CARD DESTAQUE */
-
-.destaque{
-    background: linear-gradient(135deg,#2d531a,#0d330e);
-}
-
-.destaque .secao-mini,
-.destaque .titulo-secao,
-.destaque .texto{
-    color: white;
 }
 
 /* RODAPÉ */
@@ -207,37 +199,22 @@ body{
 .rodape{
     margin-top: 70px;
 
-    background: linear-gradient(135deg, #0d330e, #2d531a);
+    background: linear-gradient(135deg, #234d17, #3d6d1f);
 
     padding: 40px;
-
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
 
     text-align: center;
 }
 
 .rodape-texto{
-    color: white;
+    color: #f5ffe8;
+
     font-size: 15px;
 }
 
 /* RESPONSIVO */
 
-@media(max-width: 1000px){
-
-    .card,
-    .card-reverso{
-        flex-direction: column;
-    }
-
-    .card-imagem{
-        width: 100%;
-    }
-
-}
-
-@media(max-width: 900px){
+@media(max-width: 950px){
 
     .header-conteudo{
         flex-direction: column;
@@ -249,21 +226,27 @@ body{
         justify-content: center;
     }
 
-    .banner-titulo{
-        font-size: 42px;
+    .card,
+    .card-reverso{
+        flex-direction: column;
+    }
+
+    .card-imagem{
+        width: 100%;
+        height: 300px;
     }
 
     .titulo-secao{
         font-size: 30px;
     }
 
-    .card{
-        padding: 30px;
-    }
-
 }
 
 @media(max-width: 600px){
+
+    .banner-topo{
+        height: 230px;
+    }
 
     .menu{
         flex-direction: column;
@@ -271,12 +254,12 @@ body{
         gap: 12px;
     }
 
-    .banner-titulo{
-        font-size: 34px;
+    .logo{
+        font-size: 32px;
     }
 
-    .banner-subtitulo{
-        font-size: 16px;
+    .card{
+        padding: 28px;
     }
 
     .titulo-secao{

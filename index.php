@@ -16,6 +16,8 @@
 
 <body>
 
+    <img src="img/Banner 2.jpg" alt="" class="banner-topo">
+
     <header class="topo">
 
         <div class="overlay">
@@ -35,18 +37,6 @@
                     <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
 
                 </nav>
-
-            </div>
-
-            <div class="banner-texto">
-
-                <h2 class="banner-titulo">Preserve o Meio Ambiente</h2>
-
-                <p class="banner-subtitulo">
-
-                    Denuncie problemas ambientais e ajude a transformar sua cidade.
-
-                </p>
 
             </div>
 
