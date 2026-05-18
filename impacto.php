@@ -45,53 +45,41 @@ foreach ($denuncias as $denuncia) {
 
 ?>
 
-    <header class="topo">
+     <header class="topo">
 
         <div class="overlay">
 
             <div class="header-conteudo">
 
-                <h1 class="logo">
+                <div>
+                    <h1 class="logo"> Impacto ambiental na cidade</h1>
 
-                    EcoDenúncia
-
-                </h1>
-
-                <nav class="menu">
-
-                    <a href="index.php" class="menu-link">Início</a>
-
-                     <a href="sobre.php" class="menu-link">Sobre</a>
-
-                    <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
-
-                    <a href="lista.php" class="menu-link">Ver Denúncias</a>
-
-                    <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
-
-                </nav>
-
-            </div>
-
-            <div class="banner-texto">
-
-                <h2 class="banner-titulo">
-
-                    Impacto Ambiental na Cidade
-
-                </h2>
-
-                <p class="banner-subtitulo">
-
-                    Dados e informações sobre os problemas ambientais registrados.
-
-                </p>
+                    <h3>Dados e infotmacoes sobre os problemas ambientais registrados</h3>
+                </div>
 
             </div>
 
         </div>
 
+
     </header>
+
+
+
+    <nav class="menu">
+
+        <a href="index.php" class="menu-link">Início</a>
+
+        <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
+
+        <a href="lista.php" class="menu-link">Ver Denúncias</a>
+
+        <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
+
+        <a href="sobre.php" class="menu-link">Sobre</a>
+
+    </nav>
+
 
 
 

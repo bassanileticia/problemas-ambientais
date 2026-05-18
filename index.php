@@ -4,6 +4,7 @@
 
 <head>
 
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,47 +19,17 @@
 
     <img src="img/EcoDenúncia.png" alt="" class="banner-topo">
 
-    <header class="topo">
-
-        <div class="overlay">
-
-            <div class="header-conteudo">
-
-                <h1 class="logo">EcoDenúncia</h1>
-
-                <nav class="menu">
-
-                    <a href="index.php" class="menu-link">Início</a>
-
-                     <a href="sobre.php" class="menu-link">Sobre</a>
-
-                    <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
-
-                    <a href="lista.php" class="menu-link">Ver Denúncias</a>
-
-                    <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
-
-                </nav>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-
     <main class="conteudo-principal">
 
 
 
-        <section class="card">
+        <section class="card-sem-fundo">
 
-            <div class="card-texto">
+    <div class="card-texto">
 
-                <span class="secao-mini">Sobre o Projeto</span>
+        <span class="secao-mini">Sobre o Projeto</span>
 
-                <h2 class="titulo-secao">
+        <h2 class="titulo-secao">
 
                     EcoDenúncia: Tecnologia para a Preservação Ambiental
 
@@ -104,6 +75,38 @@
 
         </section>
 
+</main>
+
+    <div class="overlay">
+
+            <div class="header-conteudo">
+
+                <h3 class="logo">Acesse as páginas</h3>
+
+                <nav class="menu">
+
+                   <a href="index.php" class="menu-link">Início</a>
+
+        <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
+
+        <a href="lista.php" class="menu-link">Ver Denúncias</a>
+
+        <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
+
+        <a href="sobre.php" class="menu-link">Sobre</a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    
+
+
+
+    
+
+<main class="conteudo-principal">
 
 
         <section class="card card-reverso">

@@ -14,54 +14,40 @@
 </head>
 
 <body>
-
-    <header class="topo">
+  <header class="topo">
 
         <div class="overlay">
 
             <div class="header-conteudo">
 
-                <h1 class="logo">
+                <div>
+                    <h1 class="logo"> Registro de denúncias ambientais</h1>
 
-                    EcoDenúncia
-
-                </h1>
-
-                <nav class="menu">
-
-                   <a href="index.php" class="menu-link">Início</a>
-
-                     <a href="sobre.php" class="menu-link">Sobre</a>
-
-                    <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
-
-                    <a href="lista.php" class="menu-link">Ver Denúncias</a>
-
-                    <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
-
-                </nav>
-
-            </div>
-
-            <div class="banner-texto">
-
-                <h2 class="banner-titulo">
-
-                    Registro de Denúncias Ambientais
-
-                </h2>
-
-                <p class="banner-subtitulo">
-
-                    Ajude a preservar sua cidade registrando problemas ambientais.
-
-                </p>
+                    <h3>Ajuda a preservar sua cidade registrando problemas ambientais</h3>
+                </div>
 
             </div>
 
         </div>
 
+
     </header>
+
+
+
+    <nav class="menu">
+
+        <a href="index.php" class="menu-link">Início</a>
+
+        <a href="denuncia.php" class="menu-link">Fazer Denúncia</a>
+
+        <a href="lista.php" class="menu-link">Ver Denúncias</a>
+
+        <a href="impacto.php" class="menu-link">Impacto Ambiental</a>
+
+        <a href="sobre.php" class="menu-link">Sobre</a>
+    </nav>
+
 
 
 
