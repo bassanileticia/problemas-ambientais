@@ -16,7 +16,7 @@
 
 <body>
 
-    <img src="img/Banner 2.jpg" alt="" class="banner-topo">
+    <img src="img/EcoDenúncia.png" alt="" class="banner-topo">
 
     <header class="topo">
 
