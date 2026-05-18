@@ -103,7 +103,7 @@
 
             <div class="membro">
 
-                <img class="membro-img" src="img/clarice.jpg" alt="">
+                <img class="membro-img" src="img/claricesobre.png" alt="">
 
                 <div class="membro-info">
 
