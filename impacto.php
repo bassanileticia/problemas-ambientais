@@ -147,22 +147,25 @@ foreach ($denuncias as $denuncia) {
 
 
 
-            <div class="card-estatistica destaque">
+       <a href="graves.php" style="text-decoration: none; color: inherit;">
 
-                <span class="numero">
+    <div class="card-estatistica destaque">
 
-                    <?php echo $gravidadeAlta; ?>
+        <span class="numero">
 
-                </span>
+            <?php echo $gravidadeAlta; ?>
 
-                <p class="estatistica-texto">
+        </span>
 
-                    Denúncias com gravidade alta
+        <p class="estatistica-texto">
 
-                </p>
+            Ver denúncias graves
 
-            </div>
+        </p>
 
+    </div>
+
+        </a>
 
 
         </section>
